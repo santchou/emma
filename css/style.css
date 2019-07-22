@@ -99,14 +99,13 @@ pre, code {
     white-space: pre-wrap;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     #main-doc {
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-template-areas: 
        "aside1 aside2";
     }
-
 
     #help {
       grid-area: aside1;
@@ -116,7 +115,7 @@ pre, code {
       grid-area: aside2;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     #navbar {
       width: 32%;
       position: fixed;

@@ -99,7 +99,7 @@ pre, code {
     white-space: pre-wrap;
 }
 
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
     #main-doc {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -114,8 +114,7 @@ pre, code {
     #content-section {
       grid-area: aside2;
     }
-}
-@media screen and (min-width: 800px) {
+
     #navbar {
       width: 32%;
       position: fixed;

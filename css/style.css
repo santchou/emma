@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
 body {
     margin: 0;
@@ -100,21 +101,21 @@ pre, code {
 
 @media screen and (min-width: 800px) {
     #main-doc {
-       display: grid;
-       grid-template-columns: 1fr 2fr;
-       grid-template-areas: 
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
        "aside1 aside2";
     }
-}
 
-#help {
-    grid-area: aside1;
-}
 
-#content-section {
-    grid-area: aside2;
-}
+    #help {
+      grid-area: aside1;
+    }
 
+    #content-section {
+      grid-area: aside2;
+    }
+}
 @media screen and (min-width: 800px) {
     #navbar {
       width: 32%;

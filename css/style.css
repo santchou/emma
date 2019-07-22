@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: gray;
+
+}
+
+#main-doc {
+    padding: 1em;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#nav-title {
+    margin: 0 auto;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+    background-color: #2e2733;
+    color: #fff;
+}
+
+#navbar > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar li {
+    margin: 0 auto;
+    padding: 0;
+}
+#navbar li > a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.5em;
+    background-color: #fff; 
+    background-color: blanchedalmond;
+    color: black;
+    margin-bottom: 5px;
+}
+#navbar li > a:hover {
+    text-decoration: underline;
+}
+#navbar li > a:first-child {
+    margin-top: 5px;
+}
+
+#content-section {
+    margin: 0 auto;
+    padding: 1em;
+    background-color:#fff;
+
+}
+.main-section header {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+    background-color: #2e2733;
+    color: #fff;
+}
+.main-section header {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+}
+.main-section header {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.main-section p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.main-section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main-section ul li {
+    margin: 0 auto;
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+pre, code {
+    background-color: blanchedalmond;
+    padding: 1em;
+    display: block;
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 800px) {
+    #main-doc {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-template-areas: 
+       "aside1 aside2";
+    }
+}
+
+#help {
+    grid-area: aside1;
+}
+
+#content-section {
+    grid-area: aside2;
+}
+
+@media screen and (min-width: 800px) {
+    #navbar {
+      width: 32%;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      z-index: 20;
+    }
+    .main-section ul li {
+        margin: 0 auto;
+        padding: 0.5em;
+        line-height: 1.5em;
+    }
+
+    #navbar li > a {
+        font-size: 2em;
+        margin-bottom: 5px;
+        background-color: aliceblue;
+        font-weight: 550;
+    }
+
+    #navbar ul {
+        height: 550px;
+        overflow-y: scroll;
+    }
+}
+
+

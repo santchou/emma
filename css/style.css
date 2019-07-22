@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-family: Montserrat, sans-serif;
     background-color: gray;
-
 }
 
 #main-doc {
@@ -99,20 +98,23 @@ pre, code {
     white-space: pre-wrap;
 }
 
-@media only screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
     #main-doc {
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-template-areas: 
-       "aside1 aside2";
+       "asideleft asiderigth";
     }
 
+
     #help {
-      grid-area: aside1;
+      width: 25%;
+      grid-area: asideleft;
+      
     }
 
     #content-section {
-      grid-area: aside2;
+      grid-area: asiderigth;
     }
 
     #navbar {
@@ -121,6 +123,10 @@ pre, code {
       top: 5px;
       left: 5px;
       z-index: 20;
+    }
+    #navbar ul {
+        height: 550px;
+        overflow-y: scroll;
     }
     .main-section ul li {
         margin: 0 auto;
@@ -134,11 +140,7 @@ pre, code {
         background-color: aliceblue;
         font-weight: 550;
     }
+}*/
 
-    #navbar ul {
-        height: 550px;
-        overflow-y: scroll;
-    }
-}
 
 

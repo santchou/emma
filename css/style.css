@@ -97,8 +97,8 @@ pre, code {
     display: block;
     white-space: pre-wrap;
 }
-
-/*@media screen and (min-width: 800px) {
+@supports (display: grid) {
+@media screen and (min-width: 800px) {
     #main-doc {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -140,7 +140,7 @@ pre, code {
         background-color: aliceblue;
         font-weight: 550;
     }
-}*/
-
+}
+}
 
 

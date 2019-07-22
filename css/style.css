@@ -104,13 +104,21 @@ pre, code {
       grid-template-areas: 
        "asideleft asiderigth";
     }
-    .navbar {
+    /*.navbar {
         width: 32%;
-        position: fixed;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 20;
+      }*/
+      .navbar{
+        width: 32%;
+        position: absolute;
         top: 5px;
         left: 5px;
         z-index: 20;
       }
+    
       .navbar ul {
           height: 550px;
           overflow-y: scroll;
@@ -126,17 +134,20 @@ pre, code {
           padding: 0.5em;
           line-height: 1.5em;
       }
-}
-.help {
-  width: 25%;
-  grid-area: asideleft;
-      
-}
+  
 
+}
+/*.help {
+  width: 25%;
+  grid-area: asideleft;     
+}*/
+.navbar {
+    grid-area: asideleft; 
+}
+    
 .content-section {
    grid-area: asiderigth;
 }
 
     
-
 

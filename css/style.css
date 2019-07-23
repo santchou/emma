@@ -104,43 +104,31 @@ pre, code {
       grid-template-areas: 
        "asideleft asiderigth";
     }
-    /*.navbar {
-        width: 32%;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 20;
-      }*/
-      .navbar{
-        width: 32%;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 20;
+    .navbar{
+      width: 32%;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      z-index: 20;
       }
     
       .navbar ul {
-          height: 550px;
-          overflow-y: scroll;
+        height: 550px;
+        overflow-y: scroll;
       }
       .navbar li > a {
-          font-size: 2em;
-          margin-bottom: 5px;
-          background-color: aliceblue;
+        font-size: 2em;
+        margin-bottom: 5px;
+        background-color: aliceblue;
           font-weight: 550;
       }
       .main-section ul li {
-          margin: 0 auto;
-          padding: 0.5em;
-          line-height: 1.5em;
+        margin: 0 auto;
+        padding: 0.5em;
+        line-height: 1.5em;
       }
-  
-
 }
-/*.help {
-  width: 25%;
-  grid-area: asideleft;     
-}*/
+
 .navbar {
     grid-area: asideleft; 
 }

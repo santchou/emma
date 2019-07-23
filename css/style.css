@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body, 
+#portofolio,
+.welcome,
+#navbar, 
+#navbar ul,
+#navbar ul li {
+    margin: 0;
+    padding:0;
+   
+}
+#portofolio{
+    font-family: Montserrat, sans-serif;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 1em;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: #04032b;
+}
+
+@media (min-width: 800px) {
+    #navbar ul {
+    justify-content: flex-end;
+    }
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #111111;
+    color: #FFF;
+    height: 100vh;
+}
+.title-section h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.title-section p {
+    margin: 0;
+    font-style: italic;
+}
+
+.image-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+}
+.image-section h2 {
+    margin: 0;
+    padding: 1em 0 0 0;
+    font-size: 2em;
+}
+.image-section h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+.header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ }
+@media screen and (min-width: 800px) {
+    .image-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 150px auto;
+        grid-template-areas: 
+        "head head"
+        "project1 project2"
+        "convert convert";
+        justify-content: center;
+        grid-column-gap: 5px;
+    }
+    .header {
+        grid-area: head;
+    }
+    .image1 {
+        grid-area: project1;
+    }
+    .image2 {
+        grid-area: project2;
+    }
+    .data {
+        grid-area: convert;
+    }
+}
+
+.image1, 
+.image2 {
+    margin: 0px auto 0.3em auto;
+    padding: 0 1em;
+    background-color: #030313;
+}
+.picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    color: #FFF;
+}
+.data h4 {
+    color: #45567d;
+    margin: 0;
+}
+input, button {
+    font-family: Montserrat, sans-serif;
+    padding: 0.6em;
+    font-size: 1em;
+}
+
+.callMe {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   background-color: #45567d;
+}
+
+.message {
+    margin: 0;
+    padding: 0;
+}
+.callMe h2 {
+    font-size: 2em;
+}
+.callMe h2 {
+    color: #f0f0f0;
+ }
+ .callMe a {
+     color: #FFF;
+ }
+ .callMe a {
+     text-decoration: none;
+    font-size: 1.5em;
+ }
+.iconF, .iconT, .call {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .callMe {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "asideleft middle asideright";
+        grid-column-gap: 100px;
+        /*justify-content: center;
+        align-items: center;
+        text-align: center;*/
+    }
+    .message {
+        grid-area: header;
+        align-self: auto;
+        background-color: #030313
+    }
+    .iconF {
+        grid-area: asideleft;
+        background-color: #030313
+    }
+    .call {
+        grid-area: middle;
+        background-color: #030313
+    } 
+    
+    .iconT {
+        grid-area: asideright;
+        background-color: #030313
+    }
+    
+}
+
+
+
+
+
+

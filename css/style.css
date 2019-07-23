@@ -39,20 +39,22 @@ body {
 #nav-bar {
   background-color: #ce143f;
 }
+#nav-bar ul {
+  list-style-type: none;
+}
 #nav-bar,#nav-bar ul, #nav-bar ul li {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 #nav-bar ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
  
 }
 .nav-link {
   display: block;
   margin: 0;
-  padding: 2em;
+  padding: 0.3em;
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -81,11 +83,14 @@ body {
   width: 90%;
   margin: 0 auto ;
 }
+.green #image-caption {
+  color: #FFF;
+}
 .green {
   width: 90%;
   margin: 0 auto;
   padding: 1em;
-  background-color: palegreen;
+  background-color: #043304;
 }
 #form {
   margin: 0 auto;
